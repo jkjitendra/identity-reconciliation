@@ -1,4 +1,4 @@
-package com.bitespeed.identity_reconciliation.constants;
+package com.bitespeed.identity_reconciliation.entity;
 
 public enum LinkPrecedence {
     PRIMARY,

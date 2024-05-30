@@ -1,6 +1,5 @@
 package com.bitespeed.identity_reconciliation.entity;
 
-import com.bitespeed.identity_reconciliation.constants.LinkPrecedence;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,5 +1,6 @@
 package com.bitespeed.identity_reconciliation.service;
 
+import com.bitespeed.identity_reconciliation.dto.ContactDetails;
 import com.bitespeed.identity_reconciliation.dto.ContactResponse;
 import com.bitespeed.identity_reconciliation.entity.Contact;
 import com.bitespeed.identity_reconciliation.entity.LinkPrecedence;
@@ -70,7 +71,8 @@ public class ContactService {
             secondaryContactIds.add(contact.getId());
         }
 
-        return new ContactResponse(primaryContact.getId(), emails, phoneNumbers, secondaryContactIds);
+        ContactDetails contactDetails = new ContactDetails(primaryContact.getId(), emails, phoneNumbers, secondaryContactIds);
+        return new ContactResponse(contactDetails);
     }
 }
 

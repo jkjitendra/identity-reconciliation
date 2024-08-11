@@ -1,23 +1,18 @@
 package com.bitespeed.identity_reconciliation.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.List;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class ContactResponse {
-    private Long primaryContactId;
-    private List<String> emails;
-    private List<String> phoneNumbers;
-    private List<Long> secondaryContactIds;
 
-    public ContactResponse(Long primaryContactId, List<String> emails, List<String> phoneNumbers, List<Long> secondaryContactIds) {
-        this.primaryContactId = primaryContactId;
-        this.emails = emails;
-        this.phoneNumbers = phoneNumbers;
-        this.secondaryContactIds = secondaryContactIds;
-    }
+    private ContactDetails contact;
 
 }
